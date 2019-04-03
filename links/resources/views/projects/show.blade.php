@@ -4,11 +4,13 @@
 <a href="/projects/create" class="btn btn-primary pull-right">Add project</a>
 <div class=" text-center">
 	
-  <h1>Projects</h1>
+  <h1>{{ $project->title }}</h1>
 
-  @foreach ($projects as $project)
-  	<li><a href="/projects/{{ $project->id }}">{{ $project->title }}</a></li>
-  @endforeach
+  
+  <p>{{ $project->description }}</p>
+
+  <a class="btn btn-primary" href="/projects/{{$project->id}}/edit">Edit</a>
+  
 </div>
   
 

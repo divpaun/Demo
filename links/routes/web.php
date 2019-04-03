@@ -41,6 +41,7 @@
     DELETE /projects/1 (destroy)
 */
 //Route::resource('projects', 'ProjectsController');
+
 Route::get('/','PagesController@home');
 
 Route::get('/about','PagesController@about');
